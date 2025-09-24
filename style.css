@@ -1,0 +1,95 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Comic Sans MS', cursive, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  animation: bgMove 12s ease-in-out infinite alternate;
+}
+
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+#story-container {
+  max-width: 520px;
+  margin: 60px auto;
+  background: rgba(255,255,255,0.97);
+  border-radius: 22px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.18);
+  padding: 38px 28px 32px 28px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 1.2s cubic-bezier(.4,0,.2,1);
+  transition: box-shadow 0.5s, background 0.5s;
+}
+
+#story-content {
+  min-height: 220px;
+  transition: opacity 0.7s cubic-bezier(.4,0,.2,1), filter 0.7s cubic-bezier(.4,0,.2,1);
+  will-change: opacity, filter;
+}
+
+#story-content img, #story-content video {
+  max-width: 100%;
+  border-radius: 16px;
+  margin: 22px 0 18px 0;
+  box-shadow: 0 4px 18px rgba(253,160,133,0.13);
+  animation: popIn 0.7s cubic-bezier(.4,0,.2,1);
+}
+
+button {
+  background: linear-gradient(90deg, #fda085 0%, #f6d365 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 34px;
+  font-size: 1.13em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 22px;
+  box-shadow: 0 2px 18px rgba(253,160,133,0.18);
+  transition: background 0.2s, transform 0.2s, box-shadow 0.3s;
+  outline: none;
+  letter-spacing: 0.5px;
+}
+button:active {
+  transform: scale(0.97);
+  box-shadow: 0 1px 6px rgba(253,160,133,0.10);
+}
+button:hover {
+  background: linear-gradient(90deg, #f6d365 0%, #fda085 100%);
+  color: #333;
+  transform: scale(1.05);
+  box-shadow: 0 4px 24px rgba(253,160,133,0.22);
+}
+
+h1, h2 {
+  color: #fda085;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(253,160,133,0.13);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.confetti {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.95;
+  transition: opacity 0.5s;
+}
