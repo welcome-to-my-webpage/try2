@@ -1,22 +1,23 @@
 // --- Story Steps ---
 const storySteps = [
   {
-    html: `<h2>Once upon a time...</h2><p>There was a wonderful person named <b>your name here</b> who turned 23 today!</p><img src="custom1.jpg" alt="Birthday memory" />`,
+    html: `<h2>Once upon a time...</h2><p>There was a wonderful person named <b>your name here</b> who turned 23 today!<br><span style='color:#fda085;'>This photo brings back the joy of your smile and the warmth you bring to everyone around you.</span></p><img src="IMG_0241.jpg" alt="Birthday memory" /><div style='font-size:0.95em;color:#888;margin-top:6px;'>File: IMG_0241.jpg</div>`,
   },
   {
-    html: `<h2>Memories Together</h2><p>Pick a memory to reveal:</p>
-      <button class='memory-btn' data-img='custom2a.jpg'>Memory 1</button>
-      <button class='memory-btn' data-img='custom2b.jpg'>Memory 2</button>
-      <div id='memory-reveal'></div>`
+    html: `<h2>Memories Together</h2><p>Pick a memory to reveal:<br><span style='color:#fda085;'>Each moment we’ve shared, like those in these photos, is a treasure I hold close to my heart.</span></p>
+      <button class='memory-btn' data-img='IMG_0370.jpg'>Memory 1</button>
+      <button class='memory-btn' data-img='IMG_0455.jpg'>Memory 2</button>
+      <div id='memory-reveal'></div>
+      <div style='font-size:0.95em;color:#888;margin-top:6px;'>Files: IMG_0370.jpg, IMG_0455.jpg</div>`
   },
   {
-    html: `<h2>Wishes</h2><p>May your year be filled with love, laughter, and adventure!</p><img src="custom3.jpg" alt="Birthday cake" />`,
+    html: `<h2>Wishes</h2><p>May your year be filled with love, laughter, and adventure!<br><span style='color:#fda085;'>This picture is a reminder of the fun and laughter we share—may there be so much more to come!</span></p><img src="IMG_9176.jpg" alt="Birthday cake" /><div style='font-size:0.95em;color:#888;margin-top:6px;'>File: IMG_9176.jpg</div>`,
   },
   {
-    html: `<h2>From Me to You</h2><p>Happy birthday to my best friend and love. Click below for a surprise!</p><button id='final-btn'>See Surprise</button>`,
+    html: `<h2>From Me to You</h2><p>Happy birthday to my best friend and love.<br><span style='color:#fda085;'>You make every day brighter, and I’m so grateful for you. Click below for a surprise!</span></p><button id='final-btn'>See Surprise</button><div style='font-size:0.95em;color:#888;margin-top:6px;'>No file for this step</div>`,
   },
   {
-    html: `<h2>🎉 Surprise! 🎉</h2><p>I love you! Here’s to many more birthdays together. 💖</p><img src="custom4.jpg" alt="Us together" />`,
+    html: `<h2>🎉 Surprise! 🎉</h2><p>I love you! Here’s to many more birthdays together. 💖<br><span style='color:#fda085;'>This photo is just a glimpse of the adventures and happiness I wish for us in the years ahead.</span></p><img src="12e3f3a9-94c7-4252-91c8-0a5ac6dfa924.JPG" alt="Us together" /><div style='font-size:0.95em;color:#888;margin-top:6px;'>File: 12e3f3a9-94c7-4252-91c8-0a5ac6dfa924.JPG</div>`,
   },
 ];
 
